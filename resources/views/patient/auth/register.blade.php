@@ -53,46 +53,47 @@
                         </div>
                     </div>
                     <div class="col-md-6 form_div">
-                        <h3 id="formhead">Sign up to get started</h3>
+                        <h3 id="formhead">Get Started Now</h3>
+                        <p class="signintext">Create your account now</p>
 
                         <form class="signup-form" id="signup-form">
                             @csrf
-                            <div class="form-row mb-3 p-1 input-group">
-                                <div class="col-6">
+                            <div class="form-row mb-3  input-group">
+                                <div class="col-6 pr-2">
                                     <label for="firstname">First Name</label>
                                     <input type="text" name="firstname" placeholder="John" class="form-control" required
                                         id="firstname" />
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 p-0">
                                     <label for="lastname">Last Name</label>
                                     <input type="text" name="lastname" placeholder="Smith" class="form-control" required
                                         id="lastname" />
                                 </div>
                             </div>
-                            <div class="form-group mb-3 p-1">
+                            <div class="form-group mb-3 pr-1">
                                 <label for="email">Email Address</label>
                                 <input type="email" name="email" class="form-control" id="email"
                                     placeholder="john@gmail.com" />
                                 <span id="emailspan"></span>
                             </div>
-                            <div class="form-row input-group mt-3 p-1">
-                                <div class="col-6">
+                            <div class="form-row input-group mt-3">
+                                <div class="col-6 pr-2">
                                     <label for="n-id">National ID</label>
                                     <input type="number" class="form-control" required id="n-id" autocomplete="off"
                                         name="nid" placeholder="XXXXX-XXXXXXXX-X" />
                                     <span id="nidspan"></span>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 p-0">
                                     <label for="dob">Date of Birth</label>
                                     <input type="date" class="form-control" required onfocus="this.showPicker();"
                                         name="dob" id="dob" />
                                 </div>
                             </div>
 
-                            <div class="form-group mt-3 p-1">
+                            <div class="form-group mt-3 pr-1">
                                 <label for="password">Password</label>
                                 <input type="password" class="form-control" placeholder="********" id="password"
-                                    name="password"
+                                    name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.*\s).{8,}"
                                     title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                                     required />
                             </div>
@@ -193,7 +194,7 @@
                                         pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==1) return false;"
                                         id="numberOne" form-control rounded autofocus />
                                     <div class="twobtn">
-                                        <a id="sendmail" href="javascript:void(0)">Send the code again</a>
+                                        <a id="sendmail" href="javascript:void(0)">Send OTP</a>
                                     </div>
                                     <div class="d-flex justify-content-center mt-3">
                                         <button type="submit" class="btn btn-primary">
@@ -220,7 +221,7 @@
         $('#signup-form').on('submit', function(e) {
             e.preventDefault();
             var email = $("input#email").val();
-            var url = '{{ url('/register') }}';
+            var url = "{{ url('/register') }}";
             var formData = $(this).serialize();
             // var recaptchaResponse = grecaptcha.getResponse();
             // formData += '&g-recaptcha-response=' + recaptchaResponse;
@@ -294,7 +295,7 @@
             e.preventDefault();
 
             var email = $("input#email").val();
-            var url = '{{ url('/patient/register/verify/otp') }}';
+            var url = "{{ url('/patient/register/verify/otp') }}";
             $.ajax({
                 type: "POST",
                 url: url,
@@ -330,7 +331,7 @@
             e.preventDefault();
 
             var email = $("input#email").val();
-            var url = '{{ url('/patient/register/send/otp') }}' + '/' + email;
+            var url = "{{ url('/patient/register/send/otp') }}" + "/" + email;
             $.ajax({
                 type: "GET",
                 url: url,

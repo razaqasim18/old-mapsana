@@ -22,7 +22,7 @@ return new class extends Migration
             $table->date('dob');
             $table->text('image')->nullable();;
             $table->rememberToken();
-            $table->tinyInteger('status')->default(0)->comment('0 = pending, 1 = verified, 2 = approved, 3 = blocked, 4 = suspended');
+            $table->tinyInteger('status')->default(0)->comment('0 = pending, 1 = verified, 2 = approved, 3 = suspended');
             $table->boolean('is_blocked')->default(0);
             $table->timestamps();
             $table->string('latlong')->nullable();

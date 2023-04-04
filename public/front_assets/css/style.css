@@ -30,7 +30,7 @@ h6,
 }
 
 .btn {
-    font-family: 'Poppins', sans-serif, sans-serif;
+    font-family: "Poppins", sans-serif, sans-serif;
     font-weight: 400;
     transition: 0.5s;
 }
@@ -96,7 +96,7 @@ h6,
 
 .top-shape::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 35px;
     height: 100%;
     top: 0;
@@ -106,7 +106,7 @@ h6,
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-family: 'Poppins', sans-serif, sans-serif;
+    font-family: "Poppins", sans-serif, sans-serif;
     padding: 35px 15px;
     font-size: 18px;
     color: var(--dark);
@@ -124,7 +124,6 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
@@ -173,7 +172,7 @@ h6,
 
 .section-title h5::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 45px;
     height: 3px;
     right: -55px;
@@ -183,7 +182,7 @@ h6,
 
 .section-title h5::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 15px;
     height: 3px;
     right: -75px;
@@ -225,7 +224,7 @@ h6,
 .team-item .team-text::after,
 .service-item .bg-light::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 50%;
     bottom: 0;
     left: 15px;
@@ -397,7 +396,7 @@ h3 {
     background: none;
 }
 
-.inputtag:focus~.inputlabel {
+.inputtag:focus ~ .inputlabel {
     position: absolute;
     top: 2px !important;
     transition: 0.2s;
@@ -417,7 +416,7 @@ h3 {
     border-bottom: 2px solid #198754;
 }
 
-.form-select:focus~.inputlabel {
+.form-select:focus ~ .inputlabel {
     position: absolute;
     top: 2px !important;
     transition: 0.2s;
@@ -437,7 +436,7 @@ h3 {
     /* padding: 10px 0px !important; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 html,
 body {
@@ -445,7 +444,7 @@ body {
 }
 
 .sr-font {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600 !important;
     margin-top: 20px;
 }
@@ -487,7 +486,7 @@ body {
 .bg-cover {
     /* height:  */
     padding: 50px 0px;
-    background-image: url('../../front_assets/service-imgs/doctor-bg.webp');
+    background-image: url("../../front_assets/service-imgs/doctor-bg.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -505,7 +504,7 @@ body {
 .btn-no {
     color: #091e3e;
     border: 2px solid #06a3da !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 5px 20px;
     border-radius: 7px;
 }
@@ -520,7 +519,7 @@ body {
     color: #fff;
     border-radius: 7px;
     padding: 5px 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #06a3da;
 }
 
@@ -532,7 +531,7 @@ body {
 .btn-wraper {
     margin: 20px auto;
     display: flex;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     justify-content: space-evenly;
 }
 
@@ -565,7 +564,7 @@ body {
 
 .image h2 {
     margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* doc or patient image css */
@@ -625,7 +624,7 @@ div.modal-body {
 }
 
 .modal-css h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600 !important;
     font-size: 24px !important;
     text-align: center;
@@ -640,7 +639,7 @@ div.modal-body {
 
 .categories a h4 {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 500 !important;
 }
@@ -729,7 +728,7 @@ p.warnmsg {
 .age-container {
     padding: 30px;
     width: 50%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #eef9ff;
     text-align: center;
     border-radius: 10px;
@@ -965,9 +964,9 @@ i.user-size:hover {
 .search-icon {
     position: absolute;
     left: 12px;
+    bottom: 14px;
     color: #fff;
     font-size: 20px !important;
-    /* float: left; */
 }
 
 .pl::placeholder {
@@ -992,7 +991,7 @@ i.user-size:hover {
 
 .placholder::placeholder {
     color: #d0d3d4;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .form-control.placholder {
@@ -1015,6 +1014,17 @@ i.user-size:hover {
     border: 1px solid #b9b9b9;
     /* border-left: 1px solid #b9b9b9; */
     /* align-items: center; */
+}
+
+.service_img {
+    height: 30px;
+}
+.ar_img {
+    height: 20px;
+}
+.taxi {
+    margin-left: 20px;
+    height: 24px;
 }
 
 .icon-div {
@@ -1196,7 +1206,7 @@ i.user-size:hover {
 }
 
 .card-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     /* text-align: center; */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1370,22 +1380,22 @@ p.valid {
 }
 
 .invalid::before {
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     position: relative;
     left: -2px;
     top: 4px;
     font-size: 16px !important;
-    content: '\e836';
+    content: "\e836";
     color: red !important;
 }
 
 .valid::before {
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     position: relative;
     left: -2px;
     top: 4px;
     font-size: 16px !important;
-    content: '\e86c';
+    content: "\e86c";
     color: green !important;
 }
 
@@ -1452,11 +1462,11 @@ p.valid {
     background-color: #eef9ff;
 }
 
-.form-container input[type='text']:not(:placeholder-shown) {
+.form-container input[type="text"]:not(:placeholder-shown) {
     background-color: transparent !important;
 }
 
-.form-container input[type='email']:not(:placeholder-shown) {
+.form-container input[type="email"]:not(:placeholder-shown) {
     background-color: transparent !important;
 }
 
@@ -1510,7 +1520,7 @@ p.valid {
 }
 
 /* OTP Form CSS Start*/
-.otp-form input[type='number'] {
+.otp-form input[type="number"] {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -1522,7 +1532,7 @@ p.valid {
     margin: 0px 6px 20px;
 }
 
-.otp-form input[type='number']:focus {
+.otp-form input[type="number"]:focus {
     outline: none;
 }
 
@@ -1531,7 +1541,7 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
-.otp-form input[type='text']:focus {
+.otp-form input[type="text"]:focus {
     outline: none;
 }
 
@@ -1584,14 +1594,14 @@ input::-webkit-inner-spin-button {
     margin-bottom: 50px;
 }
 
-.signinformcontainer input[type='email'] {
+.signinformcontainer input[type="email"] {
     width: 350px;
     height: 40px;
     padding-left: 15px;
     border-radius: 4px;
 }
 
-.signinformcontainer input[type='password'] {
+.signinformcontainer input[type="password"] {
     width: 350px;
     height: 40px;
     padding-left: 15px;
@@ -1605,12 +1615,12 @@ input::-webkit-inner-spin-button {
     margin-bottom: 0px !important;
 }
 
-.signinformcontainer input[type='checkbox'] {
+.signinformcontainer input[type="checkbox"] {
     width: 14px;
     height: 14px;
 }
 
-.form-check-input:checked[type='checkbox'] {
+.form-check-input:checked[type="checkbox"] {
     background-color: #06a3da;
     border-color: #06a3da;
 }
