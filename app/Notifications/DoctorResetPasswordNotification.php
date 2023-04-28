@@ -3,14 +3,14 @@
 namespace App\Notifications;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
+
 class DoctorResetPasswordNotification extends Notification implements ShouldQueue
 {
     use Queueable;
-
+    public $token;
     /**
      * Create a new notification instance.
      */
